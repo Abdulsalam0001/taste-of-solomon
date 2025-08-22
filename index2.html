@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Taste of Solomon</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f5f5f0;
+      font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+      color: #184d27;
+    }
+    .navbar {
+      background-color: #215732 !important;
+      box-shadow: 0 4px 24px rgba(33, 87, 50, 0.09);
+    }
+    .navbar-brand {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: #cfb53b !important;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    .nav-link {
+      color: #fff !important;
+      font-weight: 600;
+      margin-left: 1.5rem;
+      transition: color 0.2s;
+    }
+    .nav-link:hover {
+      color: #cfb53b !important;
+    }
+    .hero {
+      background: linear-gradient(90deg, #e7f1e7 60%, #fff 100%);
+      border-radius: 2rem;
+      box-shadow: 0 8px 32px rgba(33, 87, 50, 0.05);
+      margin-top: 2rem;
+      padding: 3rem 2rem 3rem 2rem;
+    }
+    .hero-title {
+      font-family: 'Playfair Display', serif;
+      color: #215732;
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .hero-text {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+    }
+    .hero-img {
+      border-radius: 1.5rem;
+      border: 4px solid #cfb53b;
+      box-shadow: 0 8px 32px rgba(33, 87, 50, 0.18);
+      max-width: 100%;
+      height: auto;
+    }
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      color: #215732;
+      font-size: 2.2rem;
+      margin-bottom: 1.2rem;
+    }
+    .menu-card {
+      background: #fff;
+      border-radius: 1.2rem;
+      box-shadow: 0 2px 16px rgba(33, 87, 50, 0.09);
+      border: 1.5px solid #cfb53b;
+      padding: 2rem 1.5rem;
+      margin-bottom: 2rem;
+      min-height: 200px;
+      transition: transform 0.15s;
+    }
+    .menu-card:hover {
+      transform: translateY(-6px) scale(1.02);
+    }
+    .menu-card h5 {
+      color: #215732;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+    }
+    .menu-card .price {
+      color: #cfb53b;
+      font-weight: bold;
+      font-size: 1.15rem;
+      float: right;
+    }
+    .contact a {
+      color: #215732;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+    footer {
+      background: #215732;
+      color: #cfb53b;
+      text-align: center;
+      padding: 1.5rem 0 1rem 0;
+      font-size: 1.1rem;
+      margin-top: 3rem;
+      letter-spacing: 1px;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark py-3">
+    <div class="container">
+      <a class="navbar-brand" href="#">Taste of Solomon</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbars" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbars">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="container hero d-flex flex-column flex-lg-row align-items-center justify-content-between gap-4">
+    <div class="col-lg-6">
+      <h1 class="hero-title">Welcome to Taste of Solomon</h1>
+      <p class="hero-text">
+        Experience the art of fine dining with Chef Solomon. Where every dish is crafted with passion, elegance, and a touch of luxury.
+      </p>
+      <a href="#menu" class="btn btn-lg btn-success" style="background-color:#215732;border-color:#cfb53b;color:#cfb53b;font-weight:600;">
+        Explore Menu
+      </a>
+    </div>
+    <div class="col-lg-5 text-center">
+      <img src="hero.jpg" alt="Chef Solomon" class="hero-img shadow-lg" />
+      <!-- Replace hero.jpg with your chef/food image in the same directory -->
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="container my-5 py-4">
+    <h2 class="section-title">About Chef Solomon</h2>
+    <p class="fs-5" style="max-width:800px;">
+      Chef Solomon brings years of culinary expertise and a flair for creating unique, memorable dining experiences.
+      His dishes blend tradition with innovation, offering a taste sensation in every bite.
+    </p>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="container my-5 py-4">
+    <h2 class="section-title">Signature Menu</h2>
+    <div class="row gy-4">
+      <div class="col-md-4">
+        <div class="menu-card">
+          <h5>Royal Herb-Crusted Lamb <span class="price">$49</span></h5>
+          <p class="mt-3 mb-0">Tender lamb with a delicate herb crust, served with truffle-infused mashed potatoes.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="menu-card">
+          <h5>Emerald Garden Salad <span class="price">$24</span></h5>
+          <p class="mt-3 mb-0">Fresh greens, avocado, pistachios & a hint of citrus dressing.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="menu-card">
+          <h5>Opulent Chocolate Mousse <span class="price">$28</span></h5>
+          <p class="mt-3 mb-0">Decadent dark chocolate with gold leaf and spiced berry coulis.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container my-5 py-4 contact">
+    <h2 class="section-title">Contact & Reservations</h2>
+    <p class="fs-5">
+      Ready for an unforgettable dining experience? <br>
+      <a href="mailto:solomon@tasteofsolomon.com">solomon@tasteofsolomon.com</a>
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p class="mb-0">&copy; <span id="year"></span> Taste of Solomon. Crafted with elegance.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
